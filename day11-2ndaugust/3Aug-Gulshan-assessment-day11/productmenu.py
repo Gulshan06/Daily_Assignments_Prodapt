@@ -36,7 +36,7 @@ try:
         if choice==4:
             print("list all the products that expire today - ")
             current_date=time.strftime("%m-%d-%Y-",time.localtime())
-            expired=(list(filter(lambda i:i["expirydate"]<str(current_date),productlist)))    
+            expired=(list(filter(lambda i:i["expirydate"]==str(current_date),productlist)))    
             if len(expired)>0:
                 print(expired)
             else:
