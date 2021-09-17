@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Voiz Fonica | Signup</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{% static 'voizadmin/css/reset.css' %}" type="text/css" media="all">
+<link rel="stylesheet" href="{% static 'voizadmin/css/layout.css' %}" type="text/css" media="all">
+<link rel="stylesheet" href="{% static 'voizadmin/css/style.css' %}" type="text/css" media="all">
+<script type="text/javascript" src="{% static 'voizadmin/js/jquery-1.4.2.js' %}" ></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/cufon-yui.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/cufon-replace.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/Avenir_900.font.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/Avenir_300.font.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/Avenir_500.font.js' %}"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/ie6_script_other.js"></script>
+<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body id="page2">
+<!-- START PAGE SOURCE -->
+<div class="main">
+  <div class="body1"></div>
+  <header>
+    <div class="wrapper">
+      <h1><a href="http://127.0.0.1:8000/admin" id="logo">VoizFonica </a></h1>
+      <nav>
+        <ul id="menu">
+          <li><a href="http://127.0.0.1:8000/">Home</a></li>
+          <li ><a href="http://127.0.0.1:8000/about/">About</a></li>
+          <li><a href="http://127.0.0.1:8000/service/">Services</a></li>
+          <li id="menu_active" ><a href="http://127.0.0.1:8000/signup/">Signup</a></li>
+          <li><a href="http://127.0.0.1:8000/login/">Login</a></li>
+          <li><a href="http://127.0.0.1:8000/contact/">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="banner">
+      <div class="text">
+        <h1>Communicating, Surfing, Sharing <span>Fast and Efficient</span></h1>
+        <a href="#" class="button">Read More</a> </div>
+    </div>
+  </header>
+
+
+<body>
+    <span>   </span>
+    <div class="container">
+        <div class="row">
+                <div class="col col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                <div class="col col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                    <center><header style="color: rgb(252, 251, 250) ; font-size: large; font-style: Arial;" >REGISTERATION FORM</header></center>
+    
+                    <center>
+                        <form action="http://127.0.0.1:8000/regcustomer/" method="post" enctype="multipart/form-data">
+                            <!-- {% csrf_token %}
+                            {{ form.media }}
+                            {{ form.as_p }} -->
+        
+                          <table class="table table-borderless" class="form-control">
+                           
+                            <tr>
+                                <td>Name</td>
+                                <td><input  name="customer_name" type="text" class="form-control"></td>
+                            </tr>
+                              
+                            <tr>
+                                <td>Date Of Birth</td>
+                                <td><input  name="customer_DOB" type="date" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Gender</td>
+                                <td><input name="gender" type="radio" value="male" >Male
+                                    <input name="gender" type="radio" value="female" >Female
+                                    <input name="gender" type="radio" value="others" >Others</td>
+                            </tr>
+                            <tr>
+                                <td>Permanent Address</td>
+                                <td><input  name="address" type="text" class="form-control"></td>
+                            </tr>
+                            
+                            <tr>
+                                <td>Pincode</td>
+                                <td><input  name="pincode" type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Mobile Number</td>
+                                <td><input pattern="[6-9]{1}[0-9]{9}" name="mobileno" type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td><input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"  name="email" type="email" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>Adharno</td>
+                                <td><input name="adharno" type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>product type</td>
+                                <td><select name="product_type" id="" class="form-control">           
+                                    <option value="Pre-paid">Prepaid</option>
+                                    <option value="Postpaid">Postpaid</option>
+                                    <option value="Dongle">Dongle</option>
+                                    </select></td>
+        
+                            </tr>
+                            
+                            <tr>
+                                <td>User Name</td>
+                                <td><input name="customer_username" type="text" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <td>customer_password</td>
+                                <td><input name="customer_password" type="password" class="form-control"></td>
+                            </tr>
+                            <tr>
+                                <tr>
+                                    <td>Customer Photo </td>
+                                    <td><input name="customer_photo" type="file" class="form-control"></td>
+                                </tr>
+                                <tr>
+                                    <td>Customer ID Proof</td>
+                                    <td><input name="customer_idfile" type="file" class="form-control" placeholder="Upload Image Format(jpg/png)"></td>
+                                </tr> 
+                            
+                            <!-- <tr>
+                                <td>Adhar Pic </td>
+                                <td><input name="adhar_pic" type="file" class="form-control"></td>
+                            </tr> -->
+                            <tr>
+                                <td><input type="checkbox" ></td>
+                                <td>Agree Terms and Condition</td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><button  type="submit">REGISTER</button></td>
+                            </tr>
+                        </table>
+                        </form>
+                    </div>
+                    <div class="col col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+            </div>
+        </div>  
+    
+
+                    </center> 
+</body>
+
+
+
+
+
+
+  <footer>
+    <div class="footerlink">
+      <p class="lf">Copyright &copy; 2021 <a href="#">VoizFonica</a> - All Rights Reserved</p>
+      <p class="rf">Design by <a href="http://www.templatemonster.com/">ProdaptTeamB</a></p>
+      <div style="clear:both;"></div>
+    </div>
+  </footer>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+<!-- END PAGE SOURCE -->
+</body>
+</html>

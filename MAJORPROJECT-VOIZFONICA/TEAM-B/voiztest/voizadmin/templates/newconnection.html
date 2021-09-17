@@ -1,0 +1,109 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Voiz Fonica | Home</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{% static 'voizadmin/css/reset.css' %}" type="text/css" media="all">
+<link rel="stylesheet" href="{% static 'voizadmin/css/layout.css' %}" type="text/css" media="all">
+<link rel="stylesheet" href="{% static 'voizadmin/css/style.css' %}" type="text/css" media="all">
+<script type="text/javascript" src="{% static 'voizadmin/js/jquery-1.4.2.js' %}" ></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/cufon-yui.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/cufon-replace.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/Avenir_900.font.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/Avenir_300.font.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/Avenir_500.font.js' %}"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/ie6_script_other.js"></script>
+<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body id="page1">
+<!-- START PAGE SOURCE -->
+<div class="main">
+  <div class="body1"></div>
+  <header>
+    <div class="wrapper">
+      <h1><a href="#" id="logo">VoizFonica</a></h1>
+      <nav>
+        <ul id="menu">
+          <li id="menu_active"><a href="http://127.0.0.1:8000/">Home</a></li>
+          <li><a href="http://127.0.0.1:8000/about/">About</a></li>
+          <li><a href="http://127.0.0.1:8000/service/">Services</a></li>
+          <li><a href="http://127.0.0.1:8000/signup/">Signup</a></li>
+          <li><a href="http://127.0.0.1:8000/login">Login</a></li>
+          <li><a href="http://127.0.0.1:8000/contact/">Contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <div id="banner">
+      <div class="text">
+        <h1>Communicating, Surfing, Sharing <span>Fast and Efficient </span></h1>
+        <a href="#" class="button">Read More</a> </div>
+    </div>
+  </header>
+  <section id="content">
+    <div class="box1">
+      <div class="wrapper">
+        <h2>Services</h2>
+        <ul class="list1 cols  pad_left2">
+          <li><a href="http://127.0.0.1:8000/connectionpage/">New SIM Prepaid </a></li>
+          <li><a href="http://127.0.0.1:8000/connectionpage/">New SIM Postpaid</a></li>
+          <li class="bg_none"><a href="http://127.0.0.1:8000/connectionpage/">Get Dongle </a></li>
+        </ul>
+        <ul class="list1 cols  pad_left2">
+          <li><a href="#">Port to Voizfonica </a></li>
+          <li><a href="#">International Call</a></li>
+          <li class="bg_none"><a href="#">VoizFonica Support </a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="banner">
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+
+        </div>
+        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+           <form action="http://127.0.0.1:8000/connectionadd/" method="post">
+            <table class="table table-borderless">
+               <h2> <center>Get your  New Connection home-delivered for FREE.</center> </h2>
+               <tr>
+                <td> Connection Type </td>
+                <td> <select name="connection_type" id="" class="form-control">
+                    <option value="NewPrepaid">NewPrepaid</option>
+                    <option value="NewPostPaid">NewPostPaid</option>
+                    <option value="NewDongle">NewDongle</option>
+                </select> </td>
+            </tr>
+                <tr>
+                    <td> Name </td>
+                    <td> <input placeholder="Enter Your Name" name="name" class="form-control" type="text" required> </td>
+                </tr>
+                <tr>
+                    <td> Mobile Number </td>
+                    <td> <input pattern="[6-9]{1}[0-9]{9}" placeholder="Enter Your Phone Number" name="mobile_no" class="form-control" type="text" required> </td>
+                </tr>
+                <tr>
+                    <td> Email_Id </td>
+                    <td> <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter Your Email_Id" name="email" class="form-control" type="text" required> </td>
+                </tr>
+                <tr>
+                    <td> Address </td>
+                    <td> <textarea name="address" id="" cols="20" rows="2" class="form-control"></textarea> </td>
+                </tr>
+               
+                    <td></td>
+                    <td> <Button type="submit" class="btn btn-success">SUBMIT DETAILS</Button></td>
+                </tr>
+                </table>
+           </form>
+        </div>
+        <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+
+        </div>
+    </div>
+</div>
+</div>

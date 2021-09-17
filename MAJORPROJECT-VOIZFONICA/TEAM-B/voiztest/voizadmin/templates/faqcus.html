@@ -1,0 +1,168 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Voiz Fonica | GetHelp</title>
+<meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'voizadmin/css/reset.css' %}" type="text/css" media="all">
+<link rel="stylesheet" href="{% static 'voizadmin/css/layout.css' %}" type="text/css" media="all">
+<link rel="stylesheet" href="{% static 'voizadmin/css/style.css' %}" type="text/css" media="all">
+<script type="text/javascript" src="{% static 'voizadmin/js/jquery-1.4.2.js' %}" ></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/cufon-yui.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/cufon-replace.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/Avenir_900.font.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/Avenir_300.font.js' %}"></script>
+<script type="text/javascript" src="{% static 'voizadmin/js/Avenir_500.font.js' %}"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/ie6_script_other.js"></script>
+<script type="text/javascript" src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body id="page1">
+<!-- START PAGE SOURCE -->
+<div class="main">
+  <div class="body1"></div>
+  <header>
+    <div class="wrapper">
+      <h1><a href="#" id="logo">VoizFonica</a></h1>
+      <nav>
+        <ul id="menu">
+          <li ><a href="http://127.0.0.1:8000/dashboard/">Home</a></li>
+          <li><a href="http://127.0.0.1:8000/myaccount/">My Account</a></li>
+          <li><a href="http://127.0.0.1:8000/">Prepaid</a></li>
+          <li><a href="http://127.0.0.1:8000/">Postpaid</a></li>
+          <li><a href="http://127.0.0.1:8000/donglepage/">Dongle</a></li>
+          <li id="menu_active"><a href="http://127.0.0.1:8000/cushelp/">Get Help</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="banner">
+        
+            
+      <div class="text">
+          <figure ><img src="{{data.customer_photo}}" alt="" style="height: 110px;"  class=""></figure>
+          <h1>Welcome {{data.customer_name}}!<span>{{data.mobileno}} || {{data.product_type}} </span></h1>
+          <a href="http://127.0.0.1:8000/logout/" class="button">Logout</a> </div>
+         </div>
+        </header>
+
+<body>
+    <section>
+<article>
+
+ <span> <center><header style="color: rgb(252, 251, 250) ; font-size: large; font-style: Arial;" >Popular Searches</header></center>
+
+ </span>
+ 
+                <center>
+                  <h6> <b>1.	How do I contact customer care ? </b> </h6>
+                <blockquote>In case you wish to contact customer care, please call us at 123 for queries / requests and 1198 for complaints. </blockquote> 
+                    <h6>2.	I want to view my current bill ? </h6>
+                    <blockquote>      Simply login at VoizFonica.in and go to Plan & Services >> Update Rental to change your bill plan. 
+                     You may also download My VoizFonica App and change your bill plan by going to My Account >> Plan >> View Plan >> Change Plan
+                       </blockquote>
+                    <h6>3.	Can I convert from Prepaid to Postpaid and vice versa? </h6>
+                    <blockquote> Yes, you can change your subscription from Prepaid to Post-paid or Post-paid to Prepaid.
+                     Please visit your nearest Jio store with your valid Original Proof of Address(POA) / Proof of Identity(POI) or Aadhaar card
+                      </blockquote>
+                    <h6>4.What if I do not recharge monthly? </h6>
+                    <blockquote>If you do not recharge after the validity of your existing recharge is over, you will only be able to receive incoming calls and messages. If you do not do any recharges in 90 days, your number might get disconnected  </blockquote>
+                    <h6>5.What if I do multiple recharges of the same 4G data voucher? </h6>
+                    <blockquote> It will behave like 2 paper vouchers that are taken and one is used and the other is put in the pocket, to be used when the first one is used up. Similarly, these digital vouchers will be queued up in your account, for usage only once the first voucher has expired. </blockquote>
+                    <h6> 6. I have lost / damaged my VoizFonica SIM. How do I Exchange or Replace it?</h6>
+                    <blockquote> If you have lost / damaged VoizFonica SIM Click here to suspend or resume the services of your VoizFonica Number.
+                     To get the SIM exchanged or replaced, please visit your nearest store to get a replacement of your VoizFonica SIM. To Find a Store Click here .The charge for replacement is Rs.25/-
+                     Please carry your Proof of Identity / Proof of Address documents and a passport size photograph to the store when going for a new SIM
+                     
+                     Please note- SMS services on your VoizFonica number will be not be available for next 24 Hrs after processing SIM change request
+                      </blockquote>
+                    <h6>7.How will I know when my Jio SIM is ready for tele-verification? </h6>
+                    <blockquote>You will receive SMS on your alternate mobile number and your e-mail ID informing you that your VoizFonica SIM is ready for tele-verification.
+                     You can call 1977 & tele-verify your number using one of the following options:
+                     •	Enter 5 Digit PIN received on your alternate number OR
+                     •	Enter last 4 digits of Aadhaar / Voter ID / Passport OR
+                     •	Reach our contact center advisor for tele-verification
+                     After successful verification, services of your VoizFonica SIM will be activated
+                       </blockquote>
+                    <h6>8.I want to port in my number to VoizFonica. What should I do?  </h6>
+                    <blockquote> •	To port in, SMS PORT <10-digit mobile number> to 1900 from your existing number which needs to be ported to VoizFonica
+                     •	You will get an SMS that will contain the UPC code and its expiry date
+                     •	Walk in to nearest VoizFonica Store or VoizFonica Retailer with the UPC (Unique porting code)
+                     •	Carry your original Aadhaar card or original Proof of Address(POA) / Proof of Identity(POI) documents to place MNP request
+                     Note:
+                     - Clear all your pending dues with current operator (if you have a post-paid mobile connection)
+                     - As per government regulations; if you are porting-in within same telecom circle, the number will be activated within 3 working days after successful validation. For porting-in to other telecom circle, it will take upto 5 working days. Your services will not be interrupted in the intervening period.
+                     - Port in requests from Jammu & Kashmir, Assam & North East customers will be processed within 15 working days. Your services will not be interrupted in the intervening period.
+                      </blockquote>
+                    <h6>9.Are there any additional benefits If I port my number to VoizFonica? </h6>
+                    <blockquote> When you port in your number to VoizFonica, you get the following benefits:
+                     •	Access to India’s state of the art 4G network that is built for internet and mobile video
+                     •	Access to India’s first 4G Voice service that offers crystal-clear HD voice and video calling
+                     •	Unmatchable 4G tariff plans that are simple, transparent and provide extreme value
+                      </blockquote>
+                    <h6>10.I have already opted for VoizFonica Auto Pay option. Will I be eligible to avail the benefits as per the New Tariff Plans? </h6>
+                    <blockquote>Yes, you will be eligible if the chosen recharge amount is same as the one on which new offer is available.  </blockquote>
+                    <h6>11.What documents do I need to carry to get a VoizFonica SIM for Jio Prepaid Plans? </h6>
+                    <blockquote> For new VoizFonica SIM activation, you can bring original Proof of Identity (POI) and Proof of Address (POA) document (Example - Aadhaar, Voter ID, Passport, Driving license) to the nearest VoizFonica stores or VoizFonica Digital / Dx Mini or VoizFonica retailer. </blockquote>
+                    <h6>12.How do I cancel port out request? </h6>
+                    <blockquote> You can cancel your port out request within 24hours from submitting the documents with the other operator and generation of your port out order.
+                     To cancel your port out request, send SMS “CANCEL < SPACE > < MOBILE NUMBER > TO 1900 from the mobile number for which you have submitted documents.
+                      </blockquote>
+                    <h6>13.Is Autopay mandatory for all postpaid customers? </h6>
+                    <blockquote> Yes Autopay and eBill is mandatory for all VoizFonica Prime Post-paid customers. </blockquote>
+                    <h6> 14.Can I make multiple recharges of my VoizFonica number, in such case, how will I get benefits for all recharges?</h6>
+                    <blockquote> Yes, you can make multiple recharge of the existing plan. All such recharges will be queued in your account in the same sequence in which they are recharged. These recharges will appear as “Upcoming Plan” under “My Plans” section of your “My VoizFonica App”.
+                     Similarly, as per your requirement, you can also make multiple recharges with different plans. All the recharges will be in queue and the recharge done first will be applied first and the other recharges will be queued in your account. The benefits of the recharged plan will come into effect only after the expiry of the validity of the current plan.
+                      </blockquote>
+                      <h6> 15.I made multiple recharges. Data benefits of my current plans are already exhausted. Can I activate “Upcoming Plan” prior to its scheduled date, to avail its benefits. </h6>
+                      <blockquote>Yes, in case you want to avail the benefits of the “Upcoming Plan”, prior to its schedule date then you have an option to activate the “Upcoming Plan” via MyJio App or by log in into jio.com. However, in this case the validity and the benefits of “Upcoming Plan” will start immediately as soon as the upcoming plan is “Activated”.  </blockquote>
+                      <h6>16. I want to report a voice quality issue  </h6>
+                      <blockquote> Visit VoizFonica.in/opennetwork to check network strength at your area. </blockquote>
+                      <h6> 17. I want to know my balance and validity </h6>
+                      <blockquote> To know the current balance and validity on your account, click here.
+              
+                         You can also give a missed call to 81300-81300 from your registered mobile number to know your balance.
+                          </blockquote>
+                      <h6> 18. Can't see balance after recharge </h6>
+                      <blockquote> Click on the 'recharge history' tab on your account home screen to get the status of your recharges.  Click here to go this section </blockquote>
+                      <h6> 19. How do I recharge my 4G data voucher? </h6>
+                      <blockquote> You can recharge your 4G data voucher through quick recharge option or by logging to self-care channels - MyVoizFonica app or www.VoizFonica.com.
+                         Recharge facility is now available at your nearest Digital Stores , Jio Centers and DX mini Stores.
+                         You can also pay for your 4G data voucher using credit or debit card, net banking or using VoizFonicaMoney, Paytm and Mobikwik payment wallets.
+                          </blockquote>
+
+                        
+                </center>
+
+</article>
+
+    </section>
+
+   
+
+                
+
+
+
+</body>
+
+
+
+
+
+
+        <footer>
+            <div class="footerlink">
+              <p class="lf">Copyright &copy; 2021 <a href="#">VoizFonica</a> - All Rights Reserved</p>
+              <p class="rf">Design by <a href="http://www.templatemonster.com/">ProdaptTeamB</a></p>
+              <div style="clear:both;"></div>
+            </div>
+          </footer>
+          </div>
+          <script type="text/javascript"> Cufon.now(); </script>
+          <!-- END PAGE SOURCE -->
+          </body>
+          </html>
